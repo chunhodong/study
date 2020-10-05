@@ -1,4 +1,6 @@
-/*
+import com.sun.org.apache.xml.internal.security.keys.content.MgmtData;
+
+/**
 * 빌더 패턴
 *  - 복잡한 객체를 생성하는 방법과 표현하는 방법을 정의하는 클래스를 별도로 분리하여
 *  - 서로 다른 표현이라도 이를 생성할 수 있는 동일한 구축 공정을 제공할 수 있도록 한다.
@@ -6,7 +8,7 @@
 *  - 다만 추가적인 빌더클래스를 구현해야하기떄문에 상황에 따라 코드량이 늘어날수있음
 *  - 인스턴스 변수가 많을경우 유리
 
-* public class NutritionFacts {
+  public class NutritionFacts {
     private final int servingSize;
     private final int servings;
     private final int calories;
@@ -59,6 +61,9 @@
         sodium       = builder.sodium;
         carbohydrate = builder.carbohydrate;
     }
-} */
-public class MyJava {
+}
+ */
+public class MBuilder {
+
+
 }
