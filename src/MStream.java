@@ -1,7 +1,15 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
+/**
+ * 스트림
+ - 데이터의 흐름,기존에 컬렉션이나 배열에 있는 데이터를 스트림이라는 데이터흐름으로 추상화시킴
+ - 스트림속에서 데이터를 처리할수 있음, 여러 스레드를 이용해 데이터를 병렬처리할 수 있음
+ - 데이터를 immutable한 상태로 유지할수 있음
+ * */
 public class MStream {
     private int caloiries;
 
@@ -28,6 +36,13 @@ public class MStream {
         this.name = name;
     }
 
+    public void makeStream(){
+        String[] arr = new String[]{"a","b","c"};
+        
+        Stream<String> stream = Arrays.stream(arr);
+        Stream<String> streamOfArrayPart = Arrays.stream(arr, 1, 3);
+
+    }
     public static void main(String[]args){
         System.out.println("hi");
         List<MStream> mStreamList = new ArrayList<MStream>();
